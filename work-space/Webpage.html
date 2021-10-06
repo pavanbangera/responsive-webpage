@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Web</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Main -->
+    <section class="mainpage">
+      <div class="nav">
+        <div class="nav-bar open">
+          <div class="humburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Ranking</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Perform</a></li>
+          </ul>
+        </div>
+        <div class="nav-btn"></div>
+      </div>
+      <div class="main">
+        <div class="left">
+          <h2>Ronaldo</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate
+            saepe quia beatae enim itaque. Harum illo quo exercitationem quis
+            eos distinctio temporibus? Ratione dolorum cumque repudiandae
+            aspernatur sit esse molestiae dolor animi quia id?
+          </p>
+          <div class="a">
+            <a href="" class="btn">Subcribe</a>
+          </div>
+          <div class="social">
+            <a href="">FB</a>
+            <a href="">IG</a>
+            <a href="">UT</a>
+          </div>
+        </div>
+        <div class="right">
+          <div class="img">
+            <img src="image/main.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- EndMain -->
+
+    <script src="script.js"></script>
+    <script>
+      let humburger = document.querySelector(".nav .nav-bar .humburger");
+      let nav = document.querySelector(".nav .nav-bar ");
+
+      humburger.addEventListener("click", () => {
+        nav.classList.toggle("open");
+        humburger.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
